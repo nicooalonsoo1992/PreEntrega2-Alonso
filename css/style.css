@@ -3,18 +3,52 @@ padding:0;
 box-sizing: border-box;
 }
 
-.fondoGenerico{
-    background-image: url(../images/logo\ 5%.png);
-    background-repeat: repeat-x repeat-y;
-    background-size:150px;
-    overflow: hidden;
 
+
+
+.slider{
+width: 100%;
+margin: auto;
+overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation:cambio 20s infinite alternate ;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
 
 }
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
 
 body{
     width: 100%;
-    height:200vh;
+    height:80vh;
+    overflow-y: scroll;
+
 }
 
 
@@ -23,10 +57,11 @@ header{
     background-color: #457b9d;
     width: 100%;
     height: 12vh;
-    position: absolute;
+
     
 
 }
+
 
 
 .reseteoListas a:link,
@@ -35,29 +70,35 @@ a:active {
     text-decoration: none;
     list-style-type: none;
 }
-ul{
-    text-align: center;
-    
+li{
+    list-style-type: none;
 }
+
 .alLado{
     display: flex;
 }
 
-ul li{
+nav{
+    flex-wrap: wrap;
+    background-color: #457b9d;
+    height: 50px;
+
+}
+
+nav ul li{
     list-style-type: none;
     display: inline-block;
-    background-color: #457b9d;
     color: white;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin: 15px;
     
 }
 
-#li2{
+#li2{ 
     padding: 10px 10px 10px 400px;
 }
 
-#button{
+.button{
     color: white;
     border: none;
     background-color: #457b9d;
@@ -66,157 +107,304 @@ ul li{
 
 
 
+#grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    background-image:url(../images/logo\ 5%.png);
+    background-size: 150px;
+    width: 65%;
+   height: 300px;
+border: #457b9d 2px solid;
 
 
+}
 
-
-.imgHeader{
-    display: inline;
+.vuelos{
+color: #457b9d;
+grid-column: 1/2;
+grid-row: 1/2;
+text-align: left;
+border-bottom-style:solid;
+border-bottom-color: #457b9d;
+margin: 10px;
+width: 90px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 
-main{
-width: 100%;
-height: 156vh;
+.c1{
+
+grid-column:1/2 ;
+grid-row: 2/3;
+width: 150px;
+height: 20px;
 }
 
+.c2{
+    width: 80px;
+    height: 50px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 150px;
+height: 20px;
+}
+.c3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0px 10px;
+    
+   
+}
+.c4{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 0px 10px;
+}
 
-.cajaFormulario{
-   background-color: white;
-    width: 800px;
-    height: 300px;
-    padding: 30px;
-    margin: 150px 100px 10px 360px;
-    border: 2px solid black;
-    display: inline-block;
+.c5{
+grid-column: 3/4;
+grid-row: 3/4;
+
 
 }
+.c6{ 
+grid-column: 4/5;
+grid-row: 3/4;
+    
+}
+.c7{
+grid-column: 5/46;
+grid-row: 3/4;
+    
+}
+.c8{
+grid-column: 3/4;
+grid-row: 5/6;
+    
+}
+.c9{
+grid-column:3/4 ;
+ grid-row: 6/7;
+}
+
+.buscVue{
+    color: white;
+    border:1.5px solid #1d3557;
+    background-color: #457b9d;
+    width: 200px;
+    height: 50px;
+}
+footer{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(211, 211, 211, 0.105);
+    }
+
+.alonAir{
+color: black;
+border:none;
+width: 200px;
+text-align:left;
+grid-column:1/2 ;
+grid-row:1/7 ;
+margin: 0px 110px;
+
+}
+
+.infoLeg{
+border: none;
+width: 200px;
+text-align: left;
+grid-column:2/3 ;
+grid-row:1/7 ;
+margin: 0px 270px;
+}
+
+.contacto{
+    border:none;
+width: 200px;
+text-align: center;
+grid-column:3/4 ;
+grid-row:1/7 ;
+height: 60px;
+margin: 0px 0px 0px 50px;
+}
+
+.app{
+ border: none;
+width: 200px;
+text-align: center;
+grid-column:3/4 ;
+grid-row:2/3 ;
+margin: 0px 0px 0px 50px
+}
+
+.facebook:hover{
+    width: 40px;
+    height:40px;
+
+   }
+
+   .twitter:hover{
+    width: 40px;
+    height:40px;
+   }
+
+   .youtube:hover{
+    width: 40px;
+    height:40px;
+   }
+
+   .instagram:hover{
+    width: 40px;
+    height:40px;
+   }
+
+   .linkedin:hover{
+    width: 40px;
+    height:40px;
+   }
+   .store:hover{
+    width: 80px;
+    height:40px;
+   }
+
+   .google:hover{
+    width: 80px;
+    height:40px;
+   }
+
+.colorTitulo{
+    color: #1d3557;
+}
+footer li{
+
+    color: gray;
+    text-align: left;
+    line-height: 3;
+}
+
 
 
 #ingUsuario{
-    background-color: white;
-    width: 400px;
-    height: 450px;
-    padding: 30px;
-    margin: 150px 100px 10px 550px;
+
     border: 2px solid black;
-    display: inline-block;
+    width:400px;
+    height:500px ;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image:url(../images/logo\ 5%.png);
+    background-size: 150px;
+border: #457b9d 2px solid;
+margin: 50px 0px;
 }
 
+.ingUsu{
 
-#checkIn{
-    background-color: white;
-    width: 800px;
-    height:300px;
-    padding: 30px;
-    margin: 150px 100px 10px 360px;
+margin-top: 30px;
+font-size: 45px;
+color: #1d3557;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parr{
+color: #457b9d;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: auto;
+    grid-row: 3/4;
+   } 
+
+   .nroSocio{
+grid-column: auto;
+grid-row: 4/5;
+padding: 10px;
+
+
+   }
+
+   .cont{
+    grid-column: auto;
+    grid-row: 5/6;
+
+   }
+
+   .ing{
+    grid-column: auto;
+    grid-row: 6/7;
+   }
+   .modifButton{
+    color: white;
+    border:1.5px solid #1d3557;
+    background-color: #457b9d;
+    width: 200px;
+    height: 50px;
+   }
+
+  #checkIn{
     border: 2px solid black;
-    display: inline-block;
+    width:700px;
+    height:300px ;
     text-align: center;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image:url(../images/logo\ 5%.png);
+    background-size: 150px;
+border: #457b9d 2px solid;
+margin: 50px 0px;
+  }
 
-#somos{
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
-    color: darkgrey;
-}
+  .checkin-titulo{
+font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #1d3557;
+grid-column: auto;
+grid-row: 1/2;
+  }
 
+  .checkin-p1{
+color: #457b9d;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+grid-column: auto;
+grid-row:3/4 ;
+  }
 
-
-
-footer{
-width: 100%;
-height:35vh;
-font-size: 0;
-text-align: right;
-
-
-}
-
-.azulOscuro{
-    color:#1d3557;
-    font-weight: bold;
-
-}
-
-.grisFooter{
-    color: darkgrey;
-
-}
-
-#alonairAirways{
-    width: 10%;
-    height: 30%;
-    background-color: white;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
-    margin: 0px 400px 0px 10px;
-    
-}
-
-#infoLegal{
-    width: 20%;
-    height: 100%;
-    background-color: white;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: center;
-    margin:0px 100px 0px 0px;
-    float:none;
-    position: absolute;
-    color: darkgray !important;
-    background-color: white !important;
-}
-
-.textizq{
-
-    text-align: left;
-}
-
-#contConNos{
-    font-size: 100ram;
-    font-weight: bold;
-    display: inline-block;
-    text-align: right;
-    margin: 0px 30px 0px 0px;
-    background-color: black;
-    color: red;
-
-}
+  .checkin-p2{
+    color: #457b9d;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+grid-column: auto;
+grid-row:4/5 ;
 
 
+  }
 
-#logos{
-    width: 30%;
-    height: 10%;
-    background-color: white;
-    display: inline-block;
-    text-align: right;
-    margin: 50px 20px 0px 0px;
-    position: static;
-    
+  .checkin-apellido{
+    color: #457b9d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: auto;
+    grid-row:5/6 ;
 
-}
+  }
 
-#app{
-    width: 30%;
-    height: 10%;
-    background-color: white;
-    display: inline-block;
-    text-align: right;
-    margin: 0px 20px 0px 0px;
-    position: relative;
-    top: 8em;
-    
-}
+  .checkin-reserva{
 
+    color: #457b9d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: auto;
+    grid-row:6/7 ;
+  }
 
+  .checkin-continuar{
+grid-column:auto;
+grid-row: 7/8;
 
-
-
-
-   
+  }

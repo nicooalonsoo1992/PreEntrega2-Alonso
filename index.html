@@ -4,50 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Logo alonair.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>AlonAir Airways</title>
 </head>
 <body>  
 
 
-    <header>
-<nav>
-   <div class="alLado">
-    <a href="./index.html"><img src="./images/Logo alonair.png" alt="" width="160px" height="70px" class="imgHeader"></a>
-    <ul class="reseteoListas ">
-    <li>Ofertas y destinos</li>
-    <li>Mis viajes</li>
-    <a href="./pages/contacto.html"><li>Atencion al pasajero</li></a> 
-     <li id="li2">Estado de vuelo</li>
-    <li>ALON Pass</li>
-     <a href="./pages/Iniciar sesion.html" > <li><button id="button">Iniciar sesion</button></li> </a>
+    <header >
+        <nav class="header">
+            <div class="alLado">
+                <a href="./index.html"><img src="./images/Logo alonair.png" alt="" width="160px" height="70px"
+                        class="imgHeader"></a>
+                <ul class="reseteoListas ">
+                    <li>Ofertas y destinos</li>
+                    <li>Mis viajes</li>
+                    <a href="./pages/contacto.html">
+                        <li>Atencion al pasajero</li>
+                    </a>
+                    <li id="li2">Estado de vuelo</li>
+                    <li>ALON Pass</li>
+                    <a href="./pages/Iniciar sesion.html">
+                        <li><button class="button">Iniciar sesion</button></li>
+                    </a>
 
-</ul>
-</div>
-</nav>
+                </ul>
+            </div>
+        </nav>
 
 </header>
 
 
 
+<main>
+
+   
+   <div class="slider">
+    <ul>
+        <li><img src="./images/Chalten.jpg" alt="" width="100%" height="500px"></li>
+        <li><img src="./images/bariloche.jpg" alt="" width="100%" height="500px"></li>
+        <li><img src="./images/calafate.jpg" alt="" width="100%" height="500px"></li>
+        <li><img src="./images/ushuaia.jpg" alt="" width="100%" height="500px"></li>
+        
+    </ul>
+   </div>
+   
+    
+
+<center> <form action="" method="post" enctype="text/plain"> 
+
+    <div id="grid">
+        <div class="vuelos"><h2>Vuelos</h2></div>
+        <div class="c1" ><label for=""><input type="radio" name="idayvuelta" value="Ida">Ida </label></div>
+
+<div class="c2"><label for=""><input type="radio" name="idayvuelta" value="Ida y vuelta"></label>Ida y vuelta</div>
 
 
 
-<main class="fondoGenerico">
-    <img src="./images/imagenprovisoria.png" alt="" width="100%" height="300px">
-
-
-<form action="" method="post" enctype="text/plain" class="cajaFormulario"> 
-
-<div><label for=""><input type="radio" name="idayvuelta" value="Ida">Ida </label>
-<label for=""><input type="radio" name="idayvuelta" value="Ida y vuelta"></label>Ida y vuelta</div>
-
-
-<div></div>
-<div></div>
-<div></div>
-
-
+<div class="c3">
 <select>
 <option disabled selected>ORIGEN</option>
 <option value="comodororivadavia">COMODORO RIVADAVIA</option>
@@ -60,9 +74,9 @@
 <option value="rawson">RAWSON</option>
 <option value="riogallegos">RIO GALLEGOS</option>
 
-</select>
-
-<select>
+</select></div>
+<div class="c4">
+<select >
     <option disabled selected>DESTINO</option>
     <option value="comodororivadavia">COMODORO RIVADAVIA</option>
     <option value="neuquen">NEUQUEN</option>
@@ -74,9 +88,10 @@
     <option value="rawson">RAWSON</option>
     <option value="riogallegos">RIO GALLEGOS</option>
     
-    </select>
-<input type="date" name="calendario">
+    </select></div>
 
+    <div class="c5"><input type="date" name="calendario"></div>
+<div class="c6">
 <select>
     <option disabled selected>1 PERSONA</option>
     <option value="1">1 Persona</option>
@@ -84,56 +99,41 @@
     <option value="3">3 Personas</option>
     <option value="4">4 Personas</option>
     <option value="5">5 Personas</option>
-</select>
-
+</select></div>
+<div class="c7">
 <select>
 <option disabled selected>CLASE</option>
 <option value="economy">Economy</option>
 <option value="premiumeconomy">Premium Economy</option>
 <option value="business">Business</option>
 
-</select>
-
+</select></div>
+<div class="c8">
 <select>
     <option disabled selected>Tengo flechas flexibles</option>
     <option value="si">SI</option>
     <option value="no">NO</option>
-</select>
-<input type="button" value="Buscar vuelos">
+</select></div>
+<div class="c9">
+<button class="buscVue" >Buscar vuelos</button>
+</div>
+</div>
 
-</form>
+</form></center>
 
-
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>  
 
 </main>
 
+<hr>
+<footer>  
+    
 
-<footer>
-<hr>  
-
-<div id="alonairAirways">
-<h5 class="azulOscuro">ALONAIR Arways</h5>
-    <ul class="grisFooter reseteoListas textizq">
+    <div class="alonAir">
+<h4 class="colorTitulo">ALONAIR Arways</h4>
+    <ul class="reseteoListas">
        <a href="./pages/acercadenosotros.html"><li>Acerca de ALONAIR</li></a>
         <li>Prepara tu vuelo</li>
         <li>Mis viajes</li>
@@ -144,10 +144,9 @@
        <a href="./pages/contacto.html"><li>Atencion al pasajero</li></a> 
     </ul>
 </div>
-
-<div id="infoLegal">
-  <h5 class="azulOscuro" >Informacion legal</h5>
-    <ul class="grisFooter textizq" >
+<div class="infoLeg">
+  <h4 class="colorTitulo">Informacion legal</h4>
+    <ul >
         <li>Condiciones de contrato de trasporte</li>
         <li>Cargos por sevicio</li>
         <li>privacidad, seguridad y recomendaciones</li>
@@ -155,19 +154,19 @@
     </ul>
 </div>
 
-<div id="logos">
-    <h5 id="contConNos">Contacta con nosotros</h5>
-<a href="https://facebook.com/" target="_blank"><img src="./images/facebook.jpeg" alt="" width="25px" height="25px"></a> 
-<a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="" width="25" height="25px"></a>
-<a href="https://www.youtube.com" target="_blank"><img src="./images/youtube.png" alt="" width="25px" height="25px"></a>
-<a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.jpeg" alt="" width="25px" height="25px"></a> 
-<a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.jpeg" alt="" width="25px" height="25px"></a> 
-></div>
+<div class="contacto">
+    <h4 class="colorTitulo">Contacta con nosotros</h4>
+<a href="https://facebook.com/" target="_blank"><img src="./images/facebook.jpeg" alt="" width="25px" height="25px" class="facebook"></a> 
+<a href="https://www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="" width="25" height="25px" class="twitter"></a>
+<a href="https://www.youtube.com" target="_blank"><img src="./images/youtube.png" alt="" width="25px" height="25px" class="youtube"></a>
+<a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.jpeg" alt="" width="25px" height="25px" class="instagram"></a> 
+<a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.jpeg" alt="" width="25px" height="25px" class="linkedin"></a> 
+</div>
 
-<div id="app">
-    <h5 class="azulOscuro">Nuestra app en tu telefono</h5>
-    <a href="https://www.apple.com/app-store/" target="_blank"><img src="./images/appstore.png" alt="" width="60px" height="30px"></a>
-    <a href="https://play.google.com/store/games?hl=es" target="_blank"><img src="./images/googleplay.jpeg" alt="" width="60px" height="30px"></a>
+<div class="app">
+    <h4 class="colorTitulo">Nuestra app en tu telefono</h4>
+    <a href="https://www.apple.com/app-store/" target="_blank"><img src="./images/appstore.png" alt="" width="60px" height="30px" class="store"></a>
+    <a href="https://play.google.com/store/games?hl=es" target="_blank"><img src="./images/googleplay.jpeg" alt="" width="60px" height="30px" class="google"></a>
 
 </div>
 </footer>  
